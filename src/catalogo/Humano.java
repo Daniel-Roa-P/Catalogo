@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Humano {
+public class Humano extends AparienciaAbstracta {
     
 }

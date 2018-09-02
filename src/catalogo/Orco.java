@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Orco {
+public class Orco extends AparienciaAbstracta{
     
 }

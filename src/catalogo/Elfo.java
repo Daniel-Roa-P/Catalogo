@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Elfo {
+public class Elfo extends AparienciaAbstracta{
     
 }

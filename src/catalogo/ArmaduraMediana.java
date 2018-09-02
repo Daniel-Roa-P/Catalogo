@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class ArmaduraMediana {
+public class ArmaduraMediana extends ArmaduraAbstracta{
     
 }

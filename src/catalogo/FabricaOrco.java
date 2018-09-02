@@ -9,6 +9,26 @@ package catalogo;
  *
  * @author danbr
  */
-public class FabricaOrco {
+public class FabricaOrco extends FabricaPersonajes{
+
+    @Override
+    public ArmaAbstracta crearArma() {
+        return new Martillo();
+    }
+
+    @Override
+    public MonturaAbstracta crearMontura() {
+        return new Javali();
+    }
+
+    @Override
+    public ArmaduraAbstracta crearArmadura() {
+        return new ArmaduraGrande();
+    }
+
+    @Override
+    public AparienciaAbstracta crearApariencia() {
+        return new Orco();
+    }
     
 }

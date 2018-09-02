@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class ArmaAbstracta {
+public abstract class ArmaAbstracta {
     
 }

@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class MonturaAbstracta {
+public abstract class MonturaAbstracta {
     
 }

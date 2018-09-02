@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Martillo {
+public class Martillo extends ArmaAbstracta {
     
 }

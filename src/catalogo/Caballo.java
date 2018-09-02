@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Caballo {
+public class Caballo extends MonturaAbstracta{
     
 }

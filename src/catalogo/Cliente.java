@@ -5,10 +5,7 @@
  */
 package catalogo;
 
-/**
- *
- * @author danbr
- */
+
 public class Cliente {
     
 }

@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Reno {
+public class Reno extends MonturaAbstracta{
     
 }

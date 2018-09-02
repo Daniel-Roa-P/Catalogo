@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public class Javali {
+public class Javali extends MonturaAbstracta{
     
 }

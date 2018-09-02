@@ -9,6 +9,26 @@ package catalogo;
  *
  * @author danbr
  */
-public class FabricaElfo {
+public class FabricaElfo extends FabricaPersonajes{
+
+    @Override
+    public ArmaAbstracta crearArma() {
+        return new Arco();
+    }
+
+    @Override
+    public MonturaAbstracta crearMontura() {
+        return new Reno();
+    }
+
+    @Override
+    public ArmaduraAbstracta crearArmadura() {
+        return new ArmaduraPequeña();
+    }
+
+    @Override
+    public AparienciaAbstracta crearApariencia() {
+        return new Elfo();
+    }
     
 }
