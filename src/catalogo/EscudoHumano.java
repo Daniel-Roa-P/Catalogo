@@ -9,6 +9,6 @@ package catalogo;
  *
  * @author danbr
  */
-public abstract class ArmaduraAbstracta {
+public class EscudoHumano extends EscudoAbstracto{
     
 }

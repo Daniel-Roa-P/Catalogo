@@ -13,7 +13,7 @@ public abstract class FabricaPersonajes {
     
     public abstract ArmaAbstracta crearArma();
     public abstract MonturaAbstracta crearMontura();
-    public abstract ArmaduraAbstracta crearArmadura();
+    public abstract EscudoAbstracto crearEscudo();
     public abstract AparienciaAbstracta crearApariencia();
     
     

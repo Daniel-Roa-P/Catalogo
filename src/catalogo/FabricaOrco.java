@@ -22,8 +22,8 @@ public class FabricaOrco extends FabricaPersonajes{
     }
 
     @Override
-    public ArmaduraAbstracta crearArmadura() {
-        return new ArmaduraGrande();
+    public EscudoAbstracto crearEscudo() {
+        return new EscudoOrco();
     }
 
     @Override

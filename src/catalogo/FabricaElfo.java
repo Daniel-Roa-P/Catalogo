@@ -22,8 +22,8 @@ public class FabricaElfo extends FabricaPersonajes{
     }
 
     @Override
-    public ArmaduraAbstracta crearArmadura() {
-        return new ArmaduraPequeña();
+    public EscudoAbstracto crearEscudo() {
+        return new EscudoElfo();
     }
 
     @Override

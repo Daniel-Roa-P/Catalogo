@@ -22,8 +22,8 @@ public class FabricaHumano extends FabricaPersonajes {
     }
 
     @Override
-    public ArmaduraAbstracta crearArmadura() {
-        return new ArmaduraMediana();
+    public EscudoAbstracto crearEscudo() {
+        return new EscudoHumano();
     }
 
     @Override

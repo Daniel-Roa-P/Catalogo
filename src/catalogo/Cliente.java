@@ -9,7 +9,7 @@ package catalogo;
 public class Cliente {
     
     private final ArmaAbstracta arma;
-    private ArmaduraAbstracta armadura;
+    private EscudoAbstracto escudo;
     private MonturaAbstracta montura;
     private final AparienciaAbstracta aspecto;
 
