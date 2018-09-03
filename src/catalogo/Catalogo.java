@@ -3,7 +3,6 @@ package catalogo;
 
 import java.awt.Color;
 import java.awt.Container;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,8 +21,8 @@ public class Catalogo extends JFrame implements ActionListener {
         JLabel Aspecto=new JLabel("Aspecto");
         JLabel Armadura=new JLabel("Armadura");
         
-        JLabel img1;
-        JLabel img2;
+        JLabel img1=new JLabel();
+        JLabel img2=new JLabel();
         JLabel img3;
         JLabel img4;
         
@@ -35,29 +34,6 @@ public class Catalogo extends JFrame implements ActionListener {
         
     }
     
-    @Override
-    public void paint (Graphics g){
-        
-        super.paint(g);
-        int xpoints[] = {0, 0, 1000, 1000};
-        int ypoints[] = {0, 600,600, 0};
-        int npoints = 4;
-        
-        g.setColor(Color.LIGHT_GRAY);
-        g.fillPolygon(xpoints, ypoints, npoints);
-        b.setBounds(130, 50, 100, 35);
-        b.setBackground(Color.CYAN);
-        b2.setBounds(130, 200, 100, 35);
-        b2.setBackground(Color.CYAN);
-        b3.setBounds(130, 350, 100, 35);
-        b3.setBackground(Color.CYAN);
-
-        Arma.setBounds(300, 50, 50, 20);
-        Armadura.setBounds(300, 270, 75, 20);
-        Aspecto.setBounds(500, 50, 50, 20);
-        Montura.setBounds(500, 270, 50, 20);
-        
-    }
     public Catalogo(){
         
         Container c=getContentPane();
@@ -70,11 +46,24 @@ public class Catalogo extends JFrame implements ActionListener {
         c.add(Montura);
         c.add(Armadura);
         c.add(Aspecto);
+        c.add(img1);
+        c.add(img2);
         
         b.addActionListener(this);
         b2.addActionListener(this);
         b3.addActionListener(this);
         
+        b.setBounds(130, 50, 100, 35);
+        b.setBackground(Color.CYAN);
+        b2.setBounds(130, 200, 100, 35);
+        b2.setBackground(Color.CYAN);
+        b3.setBounds(130, 350, 100, 35);
+        b3.setBackground(Color.CYAN);
+
+        Arma.setBounds(300, 50, 40, 20);
+        Armadura.setBounds(300, 270, 65, 20);
+        Aspecto.setBounds(500, 50, 50, 20);
+        Montura.setBounds(500, 270, 50, 20);
         
     }
     
@@ -82,7 +71,39 @@ public class Catalogo extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        if(e.getSource()==b){
+        
+            FabricaPersonajes factory1 = new FabricaElfo();
+            Cliente c1 = new Cliente(factory1);
+            
+            img1.setBounds(300,80,130,130);
+            img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirArma())));
+            img2.setBounds(500,80,130,130);
+            img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirAspecto())));
+            
+        } else if(e.getSource()==b2){
+        
+            FabricaPersonajes factory2 = new FabricaHumano();
+            Cliente c2 = new Cliente(factory2);
+            
+            img1.setBounds(300,80,130,130);
+            img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirArma())));
+            img2.setBounds(500,80,130,130);
+            img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirAspecto())));
+            
+        } else if(e.getSource()==b3){
+        
+            FabricaPersonajes factory3 = new FabricaOrco();
+            Cliente c3 = new Cliente(factory3);
+            
+            img1.setBounds(300,80,130,130);
+            img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirArma())));
+            img2.setBounds(500,80,130,130);
+            img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirAspecto())));
+            
+        }
+        
     }
     
 }

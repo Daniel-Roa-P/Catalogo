@@ -10,5 +10,12 @@ package catalogo;
  * @author danbr
  */
 public class Humano extends AparienciaAbstracta {
+
+    @Override
+    public String mostrarApariencia() {
+        
+        return "hombre.jpg";
+        
+    }
     
 }

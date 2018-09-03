@@ -8,4 +8,37 @@ package catalogo;
 
 public class Cliente {
     
+    private final ArmaAbstracta arma;
+    private ArmaduraAbstracta armadura;
+    private MonturaAbstracta montura;
+    private final AparienciaAbstracta aspecto;
+
+    Cliente(FabricaPersonajes factory) {
+        
+        arma=factory.crearArma();
+        aspecto=factory.crearApariencia();
+        
+    }
+
+    public String recibirArma() {
+        
+        return arma.mostrar();
+
+    }
+    public String recibirAspecto() {
+        
+        return aspecto.mostrarApariencia();
+
+    }
+//    public String recibirMontura() {
+//        
+//        return arma.mostrar();
+//
+//    }
+//    public String recibirArmadura() {
+//        
+//        return arma.mostrar();
+//
+//    }
+    
 }
