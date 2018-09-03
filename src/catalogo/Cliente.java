@@ -17,7 +17,7 @@ public class Cliente {
         
         arma=factory.crearArma();
         aspecto=factory.crearApariencia();
-        
+        escudo=factory.crearEscudo();
     }
 
     public String recibirArma() {
@@ -35,10 +35,10 @@ public class Cliente {
 //        return arma.mostrar();
 //
 //    }
-//    public String recibirArmadura() {
-//        
-//        return arma.mostrar();
-//
-//    }
+    public String recibirEscudo() {
+        
+        return escudo.mostrarEscudo();
+
+    }
     
 }

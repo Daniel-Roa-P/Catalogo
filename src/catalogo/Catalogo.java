@@ -18,11 +18,11 @@ public class Catalogo extends JFrame implements ActionListener {
         JLabel Arma=new JLabel("Arma");
         JLabel Montura=new JLabel("Montura");
         JLabel Aspecto=new JLabel("Aspecto");
-        JLabel Armadura=new JLabel("Armadura");
+        JLabel Escudo=new JLabel("Armadura");
         
         JLabel img1=new JLabel();
         JLabel img2=new JLabel();
-        JLabel img3;
+        JLabel img3=new JLabel();
         JLabel img4;
         
     public static void main(String[] args) {
@@ -43,10 +43,11 @@ public class Catalogo extends JFrame implements ActionListener {
         c.add(b3);
         c.add(Arma);
         c.add(Montura);
-        c.add(Armadura);
+        c.add(Escudo);
         c.add(Aspecto);
         c.add(img1);
         c.add(img2);
+        c.add(img3);
         
         b.addActionListener(this);
         b2.addActionListener(this);
@@ -60,7 +61,7 @@ public class Catalogo extends JFrame implements ActionListener {
         b3.setBackground(Color.CYAN);
 
         Arma.setBounds(300, 50, 40, 20);
-        Armadura.setBounds(300, 270, 65, 20);
+        Escudo.setBounds(300, 270, 65, 20);
         Aspecto.setBounds(500, 50, 50, 20);
         Montura.setBounds(500, 270, 50, 20);
         
@@ -80,6 +81,8 @@ public class Catalogo extends JFrame implements ActionListener {
             img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirArma())));
             img2.setBounds(500,80,130,130);
             img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirAspecto())));
+            img3.setBounds(300,295,130,130);
+            img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirEscudo())));
             
         } else if(e.getSource()==b2){
         
@@ -90,6 +93,8 @@ public class Catalogo extends JFrame implements ActionListener {
             img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirArma())));
             img2.setBounds(500,80,130,130);
             img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirAspecto())));
+             img3.setBounds(300,295,130,130);
+            img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirEscudo())));
             
         } else if(e.getSource()==b3){
         
@@ -100,7 +105,8 @@ public class Catalogo extends JFrame implements ActionListener {
             img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirArma())));
             img2.setBounds(500,80,130,130);
             img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirAspecto())));
-            
+             img3.setBounds(300,295,130,130);
+            img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirEscudo())));
         }
         
     }
