@@ -10,5 +10,12 @@ package catalogo;
  * @author danbr
  */
 public class Caballo extends MonturaAbstracta{
+
+    @Override
+    public String mostrarMontura() {
+        
+        return "caballodeguerra.jpg";
+        
+    }
     
 }

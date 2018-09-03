@@ -23,7 +23,7 @@ public class Catalogo extends JFrame implements ActionListener {
         JLabel img1=new JLabel();
         JLabel img2=new JLabel();
         JLabel img3=new JLabel();
-        JLabel img4;
+        JLabel img4=new JLabel();
         
     public static void main(String[] args) {
         
@@ -48,6 +48,7 @@ public class Catalogo extends JFrame implements ActionListener {
         c.add(img1);
         c.add(img2);
         c.add(img3);
+        c.add(img4);
         
         b.addActionListener(this);
         b2.addActionListener(this);
@@ -83,6 +84,8 @@ public class Catalogo extends JFrame implements ActionListener {
             img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirAspecto())));
             img3.setBounds(300,295,130,130);
             img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirEscudo())));
+            img4.setBounds(500,295,130,130);
+            img4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c1.recibirMontura())));
             
         } else if(e.getSource()==b2){
         
@@ -93,8 +96,10 @@ public class Catalogo extends JFrame implements ActionListener {
             img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirArma())));
             img2.setBounds(500,80,130,130);
             img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirAspecto())));
-             img3.setBounds(300,295,130,130);
+            img3.setBounds(300,295,130,130);
             img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirEscudo())));
+            img4.setBounds(500,295,130,130);
+            img4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c2.recibirMontura())));
             
         } else if(e.getSource()==b3){
         
@@ -105,8 +110,10 @@ public class Catalogo extends JFrame implements ActionListener {
             img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirArma())));
             img2.setBounds(500,80,130,130);
             img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirAspecto())));
-             img3.setBounds(300,295,130,130);
+            img3.setBounds(300,295,130,130);
             img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirEscudo())));
+            img4.setBounds(500,295,130,130);
+            img4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/catalogo/"+c3.recibirMontura())));
         }
         
     }

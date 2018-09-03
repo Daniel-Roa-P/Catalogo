@@ -10,5 +10,12 @@ package catalogo;
  * @author danbr
  */
 public class Reno extends MonturaAbstracta{
+
+    @Override
+    public String mostrarMontura() {
+        
+        return "reno.jpg";
+        
+    }
     
 }
