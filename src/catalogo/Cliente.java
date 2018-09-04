@@ -9,8 +9,8 @@ package catalogo;
 public class Cliente {
     
     private final ArmaAbstracta arma;
-    private EscudoAbstracto escudo;
-    private MonturaAbstracta montura;
+    private final EscudoAbstracto escudo;
+    private final MonturaAbstracta montura;
     private final AparienciaAbstracta aspecto;
 
     Cliente(FabricaPersonajes factory) {
